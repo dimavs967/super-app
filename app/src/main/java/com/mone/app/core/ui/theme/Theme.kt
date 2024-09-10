@@ -1,4 +1,4 @@
-package com.mone.app.ui.theme
+package com.mone.app.core.ui.theme
 
 import android.app.Activity
 import android.os.Build
