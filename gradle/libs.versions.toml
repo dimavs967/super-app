@@ -1,31 +1,172 @@
 [versions]
-agp = "8.5.0"
-kotlin = "1.9.0"
+agp = "8.5.2"
+kotlin = "2.0.0"
 coreKtx = "1.13.1"
 junit = "4.13.2"
 junitVersion = "1.2.1"
 espressoCore = "3.6.1"
 lifecycleRuntimeKtx = "2.8.5"
-activityCompose = "1.9.1"
-composeBom = "2024.04.01"
+activityCompose = "1.9.2"
+composeBom = "2024.09.01"
+
+# Common
+materialVersion = "1.12.0"
+googleServices = "4.4.2"
+firebaseFirestore = "25.1.0"
+kspVersion = "2.0.0-1.0.21"
+playServicesLocation = "21.3.0"
+securityCrypto = "1.1.0-alpha06"
+workRuntimeKtx = "2.9.0"
+sentryAndroid = "6.9.2"
+
+# Compose
+navigationCompose = "2.8.0-beta03"
+
+# Hilt
+androidx-hilt = "1.2.0"
+hiltAndroid = "2.49"
+hiltAndroidCompiler = "2.49"
+hiltNavigationCompose = "1.2.0"
+hiltNavigationFragment = "1.2.0"
+googleHilt = "2.48.1"
+
+# Coroutines
+kotlinxCoroutinesAndroid = "1.8.1"
+kotlinxCoroutinesCore = "1.8.1"
+
+# Testing
+leakcanaryAndroid = "2.9.1"
+
+# Network
+retrofit = "2.9.0"
+serialization = "1.6.3"
+loggingInterceptor = "5.0.0-alpha.2"
+converterGson = "2.9.0"
+
+# Utils
+lottie = "6.2.0"
+lottieCompose = "6.1.0"
 
 [libraries]
+#androidx-core-ktx = { group = "androidx.core", name = "core-ktx", version.ref = "coreKtx" }
+#junit = { group = "junit", name = "junit", version.ref = "junit" }
+#androidx-junit = { group = "androidx.test.ext", name = "junit", version.ref = "junitVersion" }
+#androidx-espresso-core = { group = "androidx.test.espresso", name = "espresso-core", version.ref = "espressoCore" }
+#androidx-lifecycle-runtime-ktx = { group = "androidx.lifecycle", name = "lifecycle-runtime-ktx", version.ref = "lifecycleRuntimeKtx" }
+#androidx-activity-compose = { group = "androidx.activity", name = "activity-compose", version.ref = "activityCompose" }
+#androidx-compose-bom = { group = "androidx.compose", name = "compose-bom", version.ref = "composeBom" }
+#androidx-ui = { group = "androidx.compose.ui", name = "ui" }
+#androidx-ui-graphics = { group = "androidx.compose.ui", name = "ui-graphics" }
+#androidx-ui-tooling = { group = "androidx.compose.ui", name = "ui-tooling" }
+#androidx-ui-tooling-preview = { group = "androidx.compose.ui", name = "ui-tooling-preview" }
+#androidx-ui-test-manifest = { group = "androidx.compose.ui", name = "ui-test-manifest" }
+#androidx-ui-test-junit4 = { group = "androidx.compose.ui", name = "ui-test-junit4" }
+#androidx-material3 = { group = "androidx.compose.material3", name = "material3" }
+
+# Common
 androidx-core-ktx = { group = "androidx.core", name = "core-ktx", version.ref = "coreKtx" }
+androidx-security-crypto = { module = "androidx.security:security-crypto", version.ref = "securityCrypto" }
+material = { module = "com.google.android.material:material", version.ref = "materialVersion" }
+androidx-lifecycle-runtime-ktx = { group = "androidx.lifecycle", name = "lifecycle-runtime-ktx", version.ref = "lifecycleRuntimeKtx" }
+kotlinx-serialization-json = { module = "org.jetbrains.kotlinx:kotlinx-serialization-json", version.ref = "serialization" }
+play-services-location = { module = "com.google.android.gms:play-services-location", version.ref = "playServicesLocation" }
+sentry-android = { module = "io.sentry:sentry-android", version.ref = "sentryAndroid" }
+
+# Google Services
+firebase-firestore = { group = "com.google.firebase", name = "firebase-firestore", version.ref = "firebaseFirestore" }
+#google-services = { group = "com.google.gms", name = "google-services", version.ref = "googleServices" }
+
+# Compose
+androidx-navigation-compose = { module = "androidx.navigation:navigation-compose", version.ref = "navigationCompose" }
+androidx-ui-tooling = { group = "androidx.compose.ui", name = "ui-tooling" }
+androidx-ui-tooling-preview = { group = "androidx.compose.ui", name = "ui-tooling-preview" }
+androidx-activity-compose = { group = "androidx.activity", name = "activity-compose", version.ref = "activityCompose" }
+androidx-compose-bom = { group = "androidx.compose", name = "compose-bom", version.ref = "composeBom" }
+androidx-ui-graphics = { group = "androidx.compose.ui", name = "ui-graphics" }
+androidx-material3 = { group = "androidx.compose.material3", name = "material3" }
+androidx-ui = { group = "androidx.compose.ui", name = "ui" }
+
+# Hilt
+hilt-android-dependency = { module = "com.google.dagger:hilt-android", version.ref = "hiltAndroid" }
+androidx-hilt-work = { group = "androidx.hilt", name = "hilt-work", version.ref = "androidx-hilt" }
+hilt-android-compiler = { module = "com.google.dagger:hilt-android-compiler", version.ref = "hiltAndroidCompiler" }
+hilt-navigation-compose = { module = "androidx.hilt:hilt-navigation-compose", version.ref = "hiltNavigationCompose" }
+androidx-hilt-navigation-fragment = { module = "androidx.hilt:hilt-navigation-fragment", version.ref = "hiltNavigationFragment" }
+androidx-work-runtime-ktx = { module = "androidx.work:work-runtime-ktx", version.ref = "workRuntimeKtx" }
+
+# Testing
+leakcanary-android = { module = "com.squareup.leakcanary:leakcanary-android", version.ref = "leakcanaryAndroid" }
+androidx-ui-test-manifest = { group = "androidx.compose.ui", name = "ui-test-manifest" }
+androidx-ui-test-junit4 = { group = "androidx.compose.ui", name = "ui-test-junit4" }
 junit = { group = "junit", name = "junit", version.ref = "junit" }
 androidx-junit = { group = "androidx.test.ext", name = "junit", version.ref = "junitVersion" }
 androidx-espresso-core = { group = "androidx.test.espresso", name = "espresso-core", version.ref = "espressoCore" }
-androidx-lifecycle-runtime-ktx = { group = "androidx.lifecycle", name = "lifecycle-runtime-ktx", version.ref = "lifecycleRuntimeKtx" }
-androidx-activity-compose = { group = "androidx.activity", name = "activity-compose", version.ref = "activityCompose" }
-androidx-compose-bom = { group = "androidx.compose", name = "compose-bom", version.ref = "composeBom" }
-androidx-ui = { group = "androidx.compose.ui", name = "ui" }
-androidx-ui-graphics = { group = "androidx.compose.ui", name = "ui-graphics" }
-androidx-ui-tooling = { group = "androidx.compose.ui", name = "ui-tooling" }
-androidx-ui-tooling-preview = { group = "androidx.compose.ui", name = "ui-tooling-preview" }
-androidx-ui-test-manifest = { group = "androidx.compose.ui", name = "ui-test-manifest" }
-androidx-ui-test-junit4 = { group = "androidx.compose.ui", name = "ui-test-junit4" }
-androidx-material3 = { group = "androidx.compose.material3", name = "material3" }
+
+# Network
+retrofit = { module = "com.squareup.retrofit2:retrofit", version.ref = "retrofit" }
+converter-gson = { module = "com.squareup.retrofit2:converter-gson", version.ref = "converterGson" }
+logging-interceptor = { module = "com.squareup.okhttp3:logging-interceptor", version.ref = "loggingInterceptor" }
+
+# Coroutines
+kotlinx-coroutines-android = { module = "org.jetbrains.kotlinx:kotlinx-coroutines-android", version.ref = "kotlinxCoroutinesAndroid" }
+kotlinx-coroutines-core = { module = "org.jetbrains.kotlinx:kotlinx-coroutines-core", version.ref = "kotlinxCoroutinesCore" }
+
+# Utils
+lottie-airbnb = { module = "com.airbnb.android:lottie", version.ref = "lottie" }
+lottie-compose = { module = "com.airbnb.android:lottie-compose", version.ref = "lottieCompose" }
+
+[bundles]
+
+common = [
+    "androidx-core-ktx",
+    "material",
+    "androidx-lifecycle-runtime-ktx",
+    "kotlinx-serialization-json"
+]
+
+googleServices = [
+    "firebase-firestore",
+]
+
+compose = [
+    "androidx-navigation-compose",
+    "androidx-ui-tooling",
+    "androidx-ui-tooling-preview",
+    "androidx-activity-compose",
+    "androidx-ui-graphics",
+    "androidx-material3",
+    "androidx-ui"
+]
+
+lottie = [
+    "lottie-airbnb",
+    "lottie-compose"
+]
+
+hilt = [
+    "androidx-hilt-navigation-fragment",
+    "androidx-work-runtime-ktx",
+    "hilt-navigation-compose",
+    "hilt-android-dependency",
+    "androidx-hilt-work"
+]
+
+network = [
+    "retrofit",
+    "converter-gson",
+    "logging-interceptor"
+]
+
+coroutines = [
+    "kotlinx-coroutines-android",
+    "kotlinx-coroutines-core"
+]
 
 [plugins]
 android-application = { id = "com.android.application", version.ref = "agp" }
 jetbrains-kotlin-android = { id = "org.jetbrains.kotlin.android", version.ref = "kotlin" }
-
+#googleServices = { id = "com.google.gms.google-services", version.ref = "googleServices" }
+googleKsp = { id = "com.google.devtools.ksp", version.ref = "kspVersion" }
+compose-compiler = { id = "org.jetbrains.kotlin.plugin.compose", version.ref = "kotlin" }
+kotlin-serialization = { id = "org.jetbrains.kotlin.plugin.serialization", version.ref = "kotlin" }
+googleHilt = { id = "com.google.dagger.hilt.android", version.ref = "googleHilt" }
